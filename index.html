@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hockystick</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btncolor: " #FF4240 ",
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="container mx-auto">
+        <nav class="my-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl font-bold">Hockey <span class="text-red-600">'</span>s</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li class="hover:text-btncolor duration-200 ease-in-out font-medium"><a>Home</a></li>
+                      <li class="hover:text-btncolor duration-200 ease-in-out font-medium"><a>About</a></li>
+                      <li class="hover:text-btncolor duration-200 ease-in-out font-medium"><a>Pages</a></li>
+                      <li class="hover:text-btncolor duration-200 ease-in-out font-medium"><a>Blog</a></li>
+                      <li class="hover:text-btncolor duration-200 ease-in-out font-medium"><a>Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="navbar-end  ">
+                    <i class="fa-solid fa-magnifying-glass mx-4 text-xl text-slate-400 hidden md:block"></i>
+                  <a class="btn bg-btncolor text-white md:px-9">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- hero section -->
+        <section class="relative px-4 md:px-0" >
+
+            <div class="carousel w-full h-[80vh]">
+                    <!-- image div -->
+                <div id="slide1" class="carousel-item w-full relative">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full object-cover object-center " />
+                    <!-- button div -->
+                  <div class="absolute w-full justify-center md:w-0 md:justify-between left-0  md:left-8  bottom-0 space-x-4 flex -translate-y-1/2 transform md:">
+                    <a href="#slide4" class="btn bg-black text-white btn-circle">❮</a>
+                    <a href="#slide2" class="btn  bg-black text-white btn-circle">❯</a>
+                  </div>
+                 
+
+                </div>
+
+                <div id="slide2" class="carousel-item w-full relative">
+                  <img
+                    src="./Images/4.png"
+                    class="w-full object-cover object-center " />
+
+                  <div class="absolute w-full justify-center md:w-0 md:justify-between left-0  md:left-8  bottom-0 space-x-4 flex -translate-y-1/2 transform md:">
+                    <a href="#slide1" class="btn bg-black text-white btn-circle">❮</a>
+                    <a href="#slide3" class="btn bg-black text-white btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide3" class="carousel-item w-full relative">
+                    <img
+                      src="./Images/3.png"
+                      class="w-full object-cover object-center " />
+  
+                    <div class="absolute w-full justify-center md:w-0 md:justify-between left-0  md:left-8  bottom-0 space-x-4 flex -translate-y-1/2 transform md:">
+                      <a href="#slide2" class="btn bg-black text-white btn-circle">❮</a>
+                      <a href="#slide4" class="btn bg-black text-white btn-circle">❯</a>
+                    </div>
+                  </div>
+
+
+                
+               
+              </div>
+
+                <!-- detail div  -->
+                <div class=" w-full md:absolute bottom-5 space-y-4 right-5 bg-black md:w-5/12 p-5 rounded-md">
+                    <h1 class="text-white text-xl font-semibold ">Meet all the heroes from the field</h1>
+                    <p class="text-gray-400 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+        </section>
+
+
+    </header>
+
+    <main class="container mx-auto">
+        <!-- Professional Hockeys Club section -->
+         <section class="mt-12 py-12 border-dashed border-y-2">
+            <div class=" w-1/2 mx-auto space-y-4 "> 
+                <h1 class="font-bold text-xl">Professional Hockeys Club</h1>
+                <p class="text-sm text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+            <div class="border-dashed border-t-2 my-5 grid grid-cols-1 md:grid-cols-3">
+
+                
+                    <div class="relative flex flex-col justify-center items-center  ">
+                         <div class=" absolute top-0 left-0 radial-progress my-4 text-gray-300" style="--value:100;" role="progressbar"></div>
+                         <div class=" rotate-90  top-0 left-0 absolute radial-progress my-4 text-btncolor" style="--value:87;" role="progressbar"> <span class="text-black font-semibold -rotate-90">87%</span></div>
+
+                         
+                        <h1 class="font-semibold">Prayer Facility</h1>
+                        <p class="w-4/6 mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        
+                    </div>
+
+                    <!-- <div class="relative ">
+                         <div class=" absolute top-0 left-0 radial-progress my-4 text-gray-300" style="--value:100;" role="progressbar"></div>
+                         <div class=" rotate-90  top-0 left-0 absolute radial-progress my-4 text-btncolor" style="--value:87;" role="progressbar"> <span class="text-black font-semibold -rotate-90">87%</span></div>
+
+                         <div class="pt-28">
+                        <h1>Prayer Facility</h1>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div> 
+                    </div>
+
+                    <div class="relative ">
+                         <div class=" absolute top-0 left-0 radial-progress my-4 text-gray-300" style="--value:100;" role="progressbar"></div>
+                         <div class=" rotate-90  top-0 left-0 absolute radial-progress my-4 text-btncolor" style="--value:87;" role="progressbar"> <span class="text-black font-semibold -rotate-90">87%</span></div>
+
+                         <div class="pt-28">
+                        <h1>Prayer Facility</h1>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div> 
+                    </div> -->
+
+   
+           
+
+            </div>
+         </section>
+
+         <h1>404!</h1>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
